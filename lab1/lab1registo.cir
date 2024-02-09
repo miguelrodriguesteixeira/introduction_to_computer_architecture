@@ -1,0 +1,349 @@
+{
+  "comment" : "This is a JSON file describing a digital circuit, which can be loaded into the SEPE (Simulador Especial Para Ensino), a computer architecture simulator.",
+  "savedWithSimulatorVersion" : "2.1.0",
+  "savedWithSimulatorBuildOn" : "2022-05-06  at  16:34:52",
+  "editorLocked" : false,
+  "startAutomatically" : true,
+  "showConnectionColors" : true,
+  "zoomScale" : 100,
+  "gridVisible" : true,
+  "primary screen width" : 1280,
+  "primary screen height" : 800,
+  "window" : {
+    "X absolute" : 34,
+    "Y absolute" : 35,
+    "X relative" : 34,
+    "Y relative" : 35,
+    "width" : 1183,
+    "height" : 655,
+    "leftRightDividerLocation" : 168,
+    "topBottomDividerLocation" : 502
+  },
+  "connections" : [ {
+    "className" : "Connection",
+    "elementID" : 45,
+    "name" : "Connection_ID:45",
+    "numberOfBits" : 1,
+    "segments" : [ {
+      "sourcePinID" : 13,
+      "targetPinID" : 31,
+      "points" : [ {
+        "X" : 227,
+        "Y" : 172
+      }, {
+        "X" : 181,
+        "Y" : 298
+      } ]
+    } ]
+  }, {
+    "className" : "Connection",
+    "elementID" : 48,
+    "name" : "Connection_ID:48",
+    "numberOfBits" : 1,
+    "segments" : [ {
+      "sourcePinID" : 7,
+      "targetPinID" : 47,
+      "points" : [ {
+        "X" : 227,
+        "Y" : 144
+      }, {
+        "X" : 172,
+        "Y" : 250
+      } ]
+    } ]
+  }, {
+    "className" : "Connection",
+    "elementID" : 49,
+    "name" : "Connection_ID:49",
+    "numberOfBits" : 4,
+    "segments" : [ {
+      "sourcePinID" : 42,
+      "targetPinID" : 8,
+      "points" : [ {
+        "X" : 156,
+        "Y" : 144
+      }, {
+        "X" : 227,
+        "Y" : 158
+      } ]
+    } ]
+  }, {
+    "className" : "Connection",
+    "elementID" : 50,
+    "name" : "Connection_ID:50",
+    "numberOfBits" : 4,
+    "segments" : [ {
+      "sourcePinID" : 9,
+      "targetPinID" : 3,
+      "points" : [ {
+        "X" : 332,
+        "Y" : 130
+      }, {
+        "X" : 332,
+        "Y" : 40
+      }, {
+        "X" : 387,
+        "Y" : 40
+      }, {
+        "X" : 387,
+        "Y" : 130
+      } ]
+    }, {
+      "sourcePinID" : 9,
+      "targetPinID" : 40,
+      "points" : [ {
+        "X" : 332,
+        "Y" : 130
+      }, {
+        "X" : 288,
+        "Y" : 48
+      }, {
+        "X" : 320,
+        "Y" : -32
+      }, {
+        "X" : 224,
+        "Y" : 56
+      }, {
+        "X" : 43,
+        "Y" : 144
+      } ]
+    } ]
+  } ],
+  "modules" : [ {
+    "className" : "ModuleHexaDisplays",
+    "elementID" : 2,
+    "name" : "Hexadecimal displays",
+    "numberOfBits" : 4,
+    "moduleDelay" : 5,
+    "positionX" : 391,
+    "positionY" : 120,
+    "simGuiVisibleInSimulation" : true,
+    "simGuiXRelative" : 0,
+    "simGuiYRelative" : 361,
+    "simGuiWidth" : 307,
+    "simGuiHeight" : 174,
+    "nHexaDigits" : 1,
+    "onColor" : "Red",
+    "zColor" : "Black_White",
+    "inPin" : {
+      "className" : "InPin",
+      "elementID" : 3,
+      "name" : "IN",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 50,
+      "pinValueFixed" : "-"
+    }
+  }, {
+    "className" : "ModuleFlipFlop",
+    "elementID" : 6,
+    "name" : "Flip-Flop",
+    "numberOfBits" : 4,
+    "moduleDelay" : 5,
+    "positionX" : 231,
+    "positionY" : 120,
+    "clockInPin" : {
+      "className" : "InPin",
+      "elementID" : 7,
+      "name" : "CLOCK_IN",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 48,
+      "pinValueFixed" : "-"
+    },
+    "inDPin" : {
+      "className" : "InPin",
+      "elementID" : 8,
+      "name" : "D",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 49,
+      "pinValueFixed" : "-"
+    },
+    "outQPin" : {
+      "className" : "TristateOutPin",
+      "elementID" : 9,
+      "name" : "Q",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 50
+    },
+    "outQNotPin" : {
+      "className" : "TristateOutPin",
+      "elementID" : 10,
+      "name" : "Q_NOT",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : -1
+    },
+    "oePin" : {
+      "className" : "InPin",
+      "elementID" : 11,
+      "name" : "OUT_ENABLE",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : -1,
+      "pinValueFixed" : "1"
+    },
+    "clearPin" : {
+      "className" : "InPin",
+      "elementID" : 12,
+      "name" : "CLEAR",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "CIRCLE",
+      "pinConnectionID" : -1,
+      "pinValueFixed" : "1"
+    },
+    "enablePin" : {
+      "className" : "InPin",
+      "elementID" : 13,
+      "name" : "ENABLE",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 45,
+      "pinValueFixed" : "-"
+    }
+  }, {
+    "className" : "ModuleToggleButtons",
+    "elementID" : 30,
+    "name" : "Toggle buttons",
+    "numberOfBits" : 1,
+    "moduleDelay" : 5,
+    "positionX" : 96,
+    "positionY" : 288,
+    "simGuiVisibleInSimulation" : true,
+    "simGuiXRelative" : 5,
+    "simGuiYRelative" : 245,
+    "simGuiWidth" : 295,
+    "simGuiHeight" : 112,
+    "highColor" : "Red",
+    "lowColor" : "Black",
+    "outPin" : {
+      "className" : "OutPin",
+      "elementID" : 31,
+      "name" : "OUT",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 45
+    }
+  }, {
+    "className" : "ModuleAdder",
+    "elementID" : 39,
+    "name" : "Adder",
+    "numberOfBits" : 4,
+    "moduleDelay" : 5,
+    "positionX" : 47,
+    "positionY" : 120,
+    "nInputPinsArray" : [ {
+      "className" : "InPin",
+      "elementID" : 40,
+      "name" : "IN0",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 50,
+      "pinValueFixed" : "-"
+    }, {
+      "className" : "InPin",
+      "elementID" : 41,
+      "name" : "IN1",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : -1,
+      "pinValueFixed" : "0"
+    } ],
+    "outPin" : {
+      "className" : "OutPin",
+      "elementID" : 42,
+      "name" : "OUT",
+      "numberOfBits" : 4,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 49
+    },
+    "carryInPin" : {
+      "className" : "InPin",
+      "elementID" : 43,
+      "name" : "CARRY_IN",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "LEFT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : -1,
+      "pinValueFixed" : "1"
+    },
+    "carryOutPin" : {
+      "className" : "OutPin",
+      "elementID" : 44,
+      "name" : "CARRY_OUT",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : -1
+    }
+  }, {
+    "className" : "ModuleRealTimeClock",
+    "elementID" : 46,
+    "name" : "Real-time clock",
+    "numberOfBits" : 1,
+    "moduleDelay" : 5,
+    "positionX" : 88,
+    "positionY" : 240,
+    "simGuiVisibleInSimulation" : true,
+    "simGuiXRelative" : 0,
+    "simGuiYRelative" : 25,
+    "simGuiWidth" : 277,
+    "simGuiHeight" : 242,
+    "clockPeriod" : 10000,
+    "startAutomatically" : true,
+    "simulationMaster" : false,
+    "clockOutPin" : {
+      "className" : "OutPin",
+      "elementID" : 47,
+      "name" : "CLOCK_OUT",
+      "numberOfBits" : 1,
+      "pinStartBit" : 0,
+      "connStartBit" : 0,
+      "pinSide" : "RIGHT",
+      "pinShape" : "RECT",
+      "pinConnectionID" : 48
+    }
+  } ]
+}
